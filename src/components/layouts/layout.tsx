@@ -11,9 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Sider />
       <div className="p-4 sm:ml-64">
-        <div className="p-8 border-2 border-gray-200 border-dashed rounded-lg">
-          {children}
-        </div>
+        <div className="p-8">{children}</div>
       </div>
       <Footer />
     </>
