@@ -1,15 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "gilroy-medium";
-  src: url("/fonts/Gilroy-Medium.ttf") format("ttf");
-}
-@font-face {
-  font-family: "gilroy-semibold";
-  src: url("/fonts/Gilroy-SemiBold.ttf") format("ttf");
-}
+@import url("https://fonts.cdnfonts.com/css/gilroy");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,14 +18,8 @@
 }
 
 body {
-  font-family: "Gilroy-Medium", sans-serif;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "gilroy-regular", sans-serif;
+  background: white;
 }
 
 @layer utilities {

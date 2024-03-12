@@ -9,7 +9,7 @@ export default function ShowProfile() {
     console.log("checked", checked);
   };
   const label = (
-    <span>
+    <span className="ml-4">
       Show my profile to serious employers on{" "}
       <Link href="#" className="text-blue-500">
         hirethesbest.io
@@ -19,6 +19,7 @@ export default function ShowProfile() {
   );
   return (
     <Checkbox
+      className="m-[-10px]"
       label={label}
       checked={checked}
       onChange={onChange}

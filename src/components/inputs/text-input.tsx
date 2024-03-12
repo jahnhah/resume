@@ -6,14 +6,13 @@ export default function TextInput(props: any) {
     <div>
       <Input
         {...props}
-        color="lightBlue"
-        size="regular"
+        size="md"
         outline="true"
         onChange={props.onChange}
         onBlur={props.onBlur}
         value={props.value}
-        error={props.error}
-        success={props.success}
+        error={props.error ? true : false}
+        success={props.success ? true : false}
       />
       <span className="text-red-400 text-xs">{props.error}</span>
     </div>
