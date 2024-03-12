@@ -7,7 +7,9 @@ import SupportTeam from "@/components/shared/support-team";
 export default function Home() {
   return (
     <>
-      <Banner />
+      <div>
+        <Banner />
+      </div>
       <div className="mt-8">
         <PersonalInfo />
       </div>
