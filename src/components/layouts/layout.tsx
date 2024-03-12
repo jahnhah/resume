@@ -11,7 +11,9 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Sider />
       <div className="p-4 sm:ml-64">
-        <div className="py-8 px-24">{children}</div>
+        <div className="py-8 px-0 lg:px-24 [@media(width>=1500px)]:px-52">
+          {children}
+        </div>
       </div>
       <Footer />
     </>
