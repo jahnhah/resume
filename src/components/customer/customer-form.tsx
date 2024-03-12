@@ -51,7 +51,7 @@ export default function CustomerForm() {
       }) => (
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-8 mb-4">
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="text"
                 name="firstName"
@@ -66,7 +66,7 @@ export default function CustomerForm() {
                 success={!errors.firstName && touched.firstName ? "Valid" : ""}
               />
             </div>
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="text"
                 name="lastName"
@@ -79,7 +79,7 @@ export default function CustomerForm() {
                 success={!errors.lastName && touched.lastName ? "Valid" : ""}
               />
             </div>
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="text"
                 name="city"
@@ -92,7 +92,7 @@ export default function CustomerForm() {
                 success={!errors.city && touched.city ? "Valid" : ""}
               />
             </div>
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="text"
                 name="postalCode"
@@ -123,7 +123,7 @@ export default function CustomerForm() {
               />
             </div>
 
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="email"
                 name="email"
@@ -136,7 +136,7 @@ export default function CustomerForm() {
                 success={!errors.email && touched.email ? "Valid" : ""}
               />
             </div>
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="text"
                 name="phone"
@@ -149,7 +149,7 @@ export default function CustomerForm() {
                 success={!errors.phone && touched.phone ? "Valid" : ""}
               />
             </div>
-            <div className="col-span-1 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
+            <div className="col-span-2 [@media(width>=545px)]:col-span-2 [@media(width>=712px)]:col-span-1">
               <TextInput
                 type="password"
                 name="password"
