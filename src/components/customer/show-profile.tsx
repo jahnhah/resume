@@ -9,13 +9,15 @@ export default function ShowProfile() {
     console.log("checked", checked);
   };
   const label = (
-    <span className="ml-4">
-      Show my profile to serious employers on{" "}
-      <Link href="#" className="text-blue-500">
-        hirethesbest.io
-      </Link>{" "}
-      for free
-    </span>
+    <div className="ml-4 inline-flex">
+      <span>
+        Show my profile to serious employers on{" "}
+        <Link href="#" className="text-blue-500">
+          hirethesbest.io
+        </Link>{" "}
+        for free
+      </span>
+    </div>
   );
   return (
     <Checkbox

@@ -7,13 +7,15 @@ export default function DeleteAccount() {
       className="mt-6 w-full p-6 border-2 border-solid border-gray[900] shadow-none"
       placeholder=""
     >
-      <h5 className="text-[17px] mb-4">Delete account</h5>
+      <h5 className="text-[17px] mb-4 font-[Gilroy-SemiBold] text-black">
+        Delete account
+      </h5>
       <p className="mb-4">
         If you delete your account you’ll be permanently removing it from our
         systems - you can’t undo it.
       </p>
       <p className="pt-2">
-        <Link href="#" className="text-red-400 ">
+        <Link href="#" className="text-red-400 font-[Gilroy-SemiBold]">
           Yes, Delete my account
         </Link>
       </p>

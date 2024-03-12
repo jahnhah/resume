@@ -162,7 +162,7 @@ export default function CustomerForm() {
                 success={!errors.password && touched.password ? "Valid" : ""}
               />
             </div>
-            <p className="col-span-2 mt-0">
+            <p className="col-span-2 mt-0 text-gray-600">
               Use this email to log in to your{" "}
               <Link href="#" className="text-blue-500">
                 resumedone.io
