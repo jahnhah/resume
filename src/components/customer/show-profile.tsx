@@ -10,11 +10,11 @@ export default function ShowProfile() {
   };
   const label = (
     <span>
-      Use this email to log in to your{" "}
+      Show my profile to serious employers on{" "}
       <Link href="#" className="text-blue-500">
-        resumedone.io
+        hirethesbest.io
       </Link>{" "}
-      account and receive notifications.
+      for free
     </span>
   );
   return (
