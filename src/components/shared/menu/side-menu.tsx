@@ -10,6 +10,7 @@ export interface Menu {
   suffixIcon?: string;
   prefixImage?: string;
   iconStyle?: CSSProperties;
+  className?: string;
 }
 export interface SideMenuProps {
   menus: Menu[];
@@ -17,8 +18,8 @@ export interface SideMenuProps {
 export default function SideMenu({ menus }: SideMenuProps) {
   return (
     <ul className="space-y-2 font-medium">
-      {menus.map((menu) => (
-        <li key={menu.label}>
+      {menus.map((menu, index) => (
+        <li key={index} className={menu.className}>
           <Link
             href="#"
             className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-white dark:hover:bg-white group"

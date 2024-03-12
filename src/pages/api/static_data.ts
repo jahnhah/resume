@@ -5,6 +5,7 @@ export const MENUS: Menu[] = [
     prefixIcon: "faFile",
     label: "My templates",
     route: "",
+    className: "font-[Gilroy]",
   },
   {
     prefixIcon: "faMagnifyingGlass",

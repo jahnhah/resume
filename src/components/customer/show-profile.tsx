@@ -9,16 +9,17 @@ export default function ShowProfile() {
     console.log("checked", checked);
   };
   const label = (
-    <span>
-      Use this email to log in to your{" "}
+    <span className="ml-4">
+      Show my profile to serious employers on{" "}
       <Link href="#" className="text-blue-500">
-        resumedone.io
+        hirethesbest.io
       </Link>{" "}
-      account and receive notifications.
+      for free
     </span>
   );
   return (
     <Checkbox
+      className="m-[-10px]"
       label={label}
       checked={checked}
       onChange={onChange}

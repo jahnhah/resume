@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="flex items-center h-36 mb-4 rounded bg-[#008B5D] p-8">
+    <div className="mt-2 flex items-center h-36 mb-4 rounded bg-[#008B5D] p-8">
       <Image
         className="tw-object-cover tw-object-center mx-4"
         src="/images/banner-image.png"
