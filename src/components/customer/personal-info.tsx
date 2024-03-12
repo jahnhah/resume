@@ -1,43 +1,20 @@
-import { useFormik } from "formik";
-import { Input } from "@material-tailwind/react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
+import CustomerForm from "./customer-form";
+import CustomerPhoto from "./customer-photo";
+
 export default function PersonalInfo() {
-  const handleSubmit = () => {
-    console.log("submit");
-  };
-  const initialValues = { email: "", password: "" };
-  const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email address").required("Required"),
-    password: Yup.string()
-      .min(8, "Password must be at least 8 characters")
-      .required("Required"),
-  });
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={handleSubmit}
-    >
-      {(formik) => (
-        <Form>
-          <Input
-            name="email"
-            variant="outlined"
-            label="Email"
-            placeholder="Email"
-          />
-          <ErrorMessage name="email" component="div" />
-
-          <label htmlFor="password">Password</label>
-          <Field type="password" id="password" name="password" />
-          <ErrorMessage name="password" component="div" />
-
-          <button type="submit" disabled={formik.isSubmitting}>
-            Submit
-          </button>
-        </Form>
-      )}
-    </Formik>
+    <>
+      <h4 className="text-[#14141F] text-[24px] py-6 font-[gilroy-semibold]">
+        Personal Information
+      </h4>
+      <div className="grid grid-cols-7 gap-1">
+        <div className="col-span-6">
+          <CustomerForm />
+        </div>
+        <div className="flex justify-center">
+          <CustomerPhoto url="/images/customer-photo.png" />
+        </div>
+      </div>
+    </>
   );
 }

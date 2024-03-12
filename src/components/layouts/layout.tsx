@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import Sider from "./sider";
 import Banner from "./banner";
+import Footer from "./footer";
 
 export interface LayoutProps {
   children: ReactElement;
@@ -14,6 +15,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
