@@ -35,7 +35,9 @@ export default function SideMenu({ menus }: SideMenuProps) {
                 src={`/images/icons/${menu.prefixImage}.png`}
               />
             )}
-            <span className="ms-3 flex-1">{menu.label}</span>
+            <span className={"ms-3 flex-1 " + menu.className}>
+              {menu.label}
+            </span>
             {menu.suffixIcon && (
               <FontAwesomeIcon
                 width={16}

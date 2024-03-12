@@ -8,14 +8,14 @@ export interface LayoutProps {
 }
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className="text-gray-700">
       <Sider />
-      <div className="p-4 sm:ml-64">
-        <div className="py-8 px-0 lg:px-24 [@media(width>=1500px)]:px-52">
+      <div className="px-4 pt-4 sm:ml-64">
+        <div className="pt-8 px-0 lg:px-24 [@media(width>=1500px)]:px-52">
           {children}
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
