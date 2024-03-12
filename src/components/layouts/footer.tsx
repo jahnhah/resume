@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="pl-64">
-      <hr className="mt-5 mx-12 h-[2px] bg-gray-200" />
-      <div className="text-gray-500 flex align-center my-5 px-12 text-[14px]">
+    <div className="pl-0 sm:pl-64">
+      <hr className="mt-5 mx-4 lg:mx-28 h-[2px] bg-gray-200" />
+      <div className="text-gray-500 flex align-center my-5 px-4 lg:px-28 text-[14px]">
         <Link href="#" className="pr-8">
           Terms & Conditions
         </Link>
