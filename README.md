@@ -24,7 +24,7 @@ This command starts the development server, allowing you to view your resume app
 
 You can view a live version of this app deployed on Vercel. Follow the link below:
 
-[View Resume App on Vercel](https://resume-61sbjj8jd-jahnhah.vercel.app/)
+[View Resume App on Vercel](https://resume-psi-three.vercel.app/)
 
 ## License
 
